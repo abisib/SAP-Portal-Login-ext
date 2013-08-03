@@ -1,0 +1,12 @@
+CACHE MANIFEST
+popup.html
+css/style.css
+images/bg_pattern.png
+images/drop_pown_list_16.png
+images/hint_24.png
+images/menu_16.png
+images/settings_24.png
+scripts/popup.js
+scripts/jq.js
+scripts/hover_intent.js
+scripts/about.js

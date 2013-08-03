@@ -1,0 +1,300 @@
+body{
+	background-image:url('../images/bg_pattern.png');
+	min-height: 300px;
+}
+#popupContent{
+	width: 350px;
+}
+.dropDownIcon{
+	background-image:url('../images/drop_down_list_16.png');
+	display: inline-block;
+	width: 16px;
+	height:16px;
+	position: relative;
+	right: -38px;
+	top: 5px;
+}
+/**********************************************************
+ 				Quick Links Styles
+ **********************************************************/
+.groupSpan{
+	display: inline-block;
+	border-bottom: 1px solid black;
+	margin: 1px;
+	position: relative;
+	top: 0;
+	text-align: center;
+	border-radius: 5px;
+	color: white;
+	font-weight: bold;
+	height: 23px;
+	cursor: pointer;
+	background: rgba(0, 0, 0, 0.8);
+	padding: 1.5px;
+	width: 65px;
+}
+.groupSpan:hover{
+	box-shadow: inset 2px 1px 6px rgba(245, 245, 245, 0.7);
+	color: #FABA00;
+}
+.groupIcon{
+	background-image: url('../images/menu_16.png');
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	margin-left: 5px;
+	top: 3px;
+	position: relative;
+}
+#linksDiv{
+	width: 100%;
+	position: relative;
+	height: 20px;
+	padding: 5px;
+	color: white;
+	display: block;
+	margin-bottom: 15px;
+}
+.groupList{
+	list-style: none;
+	position: absolute;
+	width: 100px;
+	z-index: 1000;
+	background: whiteSmoke;
+	padding: 0;
+	top: 10px;
+	border: 1px solid black;
+	border-radius: 5px;
+	left: -20px;
+}
+#OtherList{
+	left: -25px;
+}
+.linksTitle{
+	margin: 0px 5px 0px 0px;
+	font-size: 14px;
+	color: #FABA00;
+	display: inline-block;
+}
+.linkListItem{
+	color: black;
+	font-size: 14px;
+	border-bottom: 1px solid;
+	padding: 2px;
+	background: whiteSmoke;
+	border-radius: 4px;
+}
+.linkListItem:hover{
+	background-color: #FABA00;
+}
+/**********************************************************
+ 				Portals Styles
+ **********************************************************/
+#serversSelect{
+	display: inline-block;
+	background-color: whiteSmoke;
+	border: 1.5px solid rgba(128, 128, 128, 0.8);
+	border-radius: 5px;
+	min-width: 150px;
+	margin-top: 5px;
+	text-align: center;
+	min-height: 25px;
+	max-height: 300px;
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(243,243,243,1) 50%,rgba(237,237,237,1) 51%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+}
+.singleMachine{
+	display: block;	
+	border-bottom: 1px solid;
+	padding: 5px;
+	cursor: pointer;
+	text-align: left;
+}
+.singleMachine:hover{
+	background-color: #FABA00;
+}
+.singleMachine:active{
+	font-weight: bold;
+}
+.machineUsers{
+	border: 1px solid black;
+	padding: 0px;
+	left: 115px;
+	position: absolute;
+	width: 102px;
+	cursor: pointer;
+	box-shadow: -1px 1px 6px black;
+	z-index: 1000;
+}
+.userNameButton{
+	width: 100%;
+	height: 30px;
+	font-size: 16px;
+	border-width: 0px 0px 1px 0px;
+	border-radius: 2px;
+	border-color: black;
+	display: block;
+	background: whiteSmoke;
+	font-family: Arial, sans-serif;
+	cursor: pointer;
+}
+.userNameButton:active{
+	font-style: italic;
+}
+.userNameButton:hover{
+	box-shadow: inset 2px 3px 6px grey;
+}
+/**********************************************************
+ 				Actions Styles
+ **********************************************************/
+#actionsDiv{
+	display: inline-block;
+	background-color: whiteSmoke;
+	border: 1.5px solid rgba(128, 128, 128, 0.8);
+	border-radius: 5px;
+	width:158px;
+	margin-top: 5px;
+	text-align: center;
+	min-height: 25px;
+	max-height:114px;
+	background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%,rgba(243, 243, 243, 1) 50%,rgba(237, 237, 237, 1) 51%,rgba(255, 255, 255, 1) 100%);
+	float: right;
+	position: relative;
+}
+#actionsDiv.displayWaiting:after{
+	width:158px;
+	content: attr(data-content);
+	display: block;
+	position: relative;
+	color: whiteSmoke;
+	text-align: left;
+}
+.actionButton{
+	display: block;
+	border-bottom: 1px solid;
+	padding: 5px;
+	cursor: pointer;
+	text-align: left;
+}
+.actionButton:hover{
+	background-color: #FABA00;
+}
+.actionButton:active{
+	font-weight: bold;
+}
+/**********************************************************
+ 				Settings Styles
+ **********************************************************/
+#settingsButton{
+	background-image:url('../images/settings_24.png');
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	bottom: 5px;
+	right: 5px; 
+	cursor: pointer;
+}
+#settingsButton:hover{
+	border: 1px solid black;
+	background-color: #FABA00;
+	border-radius: 5px;	
+}
+#settingsDiv{
+	width: 350px;
+}
+#quickUser{
+	color: white;
+}
+.settingButton{
+	
+}
+.settingInput{
+	display: block;
+	width: 110px;
+}
+/**********************************************************
+ 					About Styles
+ *********************************************************/
+#aboutButton{
+	background-image:url('../images/hint_24.png');
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	bottom: 5px;
+	right: 30px;
+	cursor: pointer;
+}
+#aboutButton:hover{
+	border: 1px solid black;
+	background-color: #FABA00;
+	border-radius: 5px;
+}
+.aboutCover{
+	position: absolute;
+	top:0;
+	left: 0;
+	width: 100%;
+	height:100%;
+	background: rgba(14,14,14,0.8);
+}
+.aboutPopDiv{
+	border: 2px solid whitesmoke;
+	width:80%;
+	height: 90%;
+	position: absolute;
+	top: 10px;
+	background: rgb(14,14,14);
+	max-height: 350px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	left: 32px;
+	font-family: arial, sans-serif;
+}
+.aboutTitle{
+	text-align: center;
+	color:#FABA00;
+	font-family: serif;
+}
+.aboutDescription{
+	color: white;
+	font-size: 14px;
+}
+.aboutList{
+	color: white;
+	font-size: 13px;
+	padding-left: 20px;
+}
+.featureItem{
+	margin-bottom: 5px
+}
+.created{
+	position: relative;
+	bottom: 5px;
+	left: 5px;
+	margin-top: 20px;
+	color: white;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+/**********************************************************
+ 				Scroll-Bar Styles :)
+ **********************************************************/
+::-webkit-scrollbar {
+    width: 12px;
+    background: white;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+::-webkit-scrollbar:window-inactive{
+	opacity:1; 
+}

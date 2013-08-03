@@ -1,0 +1,25 @@
+{
+	"manifest_version": 2,
+	"name": "Portal Login",
+	"version": "1.0",
+	"description": "Auto login to Netweaver Portal",
+	"background": {
+		"scripts": ["scripts/background.js"]
+	},
+	"browser_action": {
+		"default_icon": "images/icon.png",
+		"default_title": "Portal Login is active",
+		"default_popup": "popup.html"
+	},
+	"content_scripts": [{
+		"matches": ["http://*/*","<all_urls>", "https://*/*"],
+		"js": ["scripts/jq.js", "scripts/main.js"],
+		"run_at": "document_idle"
+	}],
+	"icons": {
+		"48": "images/icon48.png",
+		"128": "images/icon128.png"
+	},
+	"permissions": ["tabs","http://*/", "https://*/", "webRequest", "webRequestBlocking","cookies","browsingData"],
+	"content_security_policy": "script-src 'self'; object-src 'self'"
+}
